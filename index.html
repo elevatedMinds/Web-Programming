@@ -4,13 +4,41 @@
     <meta charset="UTF-8" />
     <!-- Tell browsers not to scale the viewport automatically -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project</title>
+    <title>Choosi</title>
     <link rel="icon" href="favicon.ico" />
   </head>
   <body>
-    <main></main>
+    <header>
+      <h1>Choosi</h1>
+      <nav>
+        <menu>
+          <li><a href="about.html">About</a></li>
+          <li><a href="favorites.html">Favorites</a></li>
+        </menu>
+      </nav>
+    </header>
+    <main>
+      <h1>Welcome!</h1>
+      <form method="get" action=".playhtml">
+        <div>
+          <span>*</span>
+          <input type="text" placeholder="Enter Username" />
+        </div>
+        <div>
+          <span>*</span>
+          <input type="password" placeholder="Enter Password" />
+        </div>
+      </form>
+      <div class="loginButtons">
+        <!--center and style buttons-->
+        <button type="login">Login</button>
+        <button type="register">Register</button>
+      </div>
+    </main>
+    <br />
+
     <footer>
-      <span class="test-reset">Author Name</span>
+      <span class="test-reset">Source</span><br />
       <a href="https://github.com/elevatedMinds/Web-Programming">Github</a>
     </footer>
   </body>
