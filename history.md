@@ -1,4 +1,6 @@
-The internet started with the formation of a global communication network
+### [notes.md](./notes.md) <br/>
+
+## The internet started with the formation of a global communication network
 
 - **ARPANET**, created by the ARPA (Advanced Research Projects Agency) of the DoD to share nuclear defence research between universities.
   - Overview: linked a network computers at Pentagon-funded reasearch institutions over telephone line.

@@ -51,15 +51,15 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [x] **HTML pages** - I did not complete this part of the deliverable.
-- [x] **Proper HTML element usage** - I did not complete this part of the deliverable.
-- [x] **Links** - I did not complete this part of the deliverable.
-- [x] **Text** - I did not complete this part of the deliverable.
-- [x] **3rd party API placeholder** - I did not complete this part of the deliverable.
-- [x] **Images** - I did not complete this part of the deliverable.
-- [x] **Login placeholder** - I did not complete this part of the deliverable.
-- [x] **DB data placeholder** - I did not complete this part of the deliverable.
-- [x] **WebSocket placeholder** - I did not complete this part of the deliverable.
+- [x] **HTML pages** - Four different view: index.html, favorites.html, about.html and play.html
+- [x] **Proper HTML element usage** - Used understanding of elements and tags such as img, form and svg to create a useful draft of website
+- [x] **Links** - Successfully links between views
+- [x] **Text** - About page includes text about website and how generator works
+- [x] **3rd party API placeholder** - Login also functions as placeholder for external API because user location is retrieved at login/registration
+- [x] **Images** - Image used on about page
+- [x] **Login placeholder** - Can be viewed on login page
+- [x] **DB data placeholder** - Can be viewed on favorites page
+- [x] **WebSocket placeholder** - SVG of piechart used as a placeholder on favorites page
 
 ## 🚀 CSS deliverable
 
