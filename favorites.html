@@ -19,9 +19,38 @@
     </header>
     <main>
         <!--SVG image for pie chart-->
-      <img src="placeholder.png" alt="clouds" width="300" height="300" />
-      <p>Wendy's - 75%</p>
-      <p>McDonald's - 25%</p>
+        <div class="generatorWheel">
+            <svg viewBox="0 0 20 25" height="300" width="300">
+              <circle r="10" cx="10" cy="10" fill="grey"/>
+              <circle r="5" cx="10" cy="10" fill="grey"
+              stroke="blue"
+              stroke-width="10"
+              stroke-dasharray="calc(35 * 31.42 / 100) 31.42" />
+            </svg>
+          </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Fast Food Places |</th>
+            <th>Percentage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>McDonald's</td>
+            <td>75%</td>
+          </tr>
+          <tr>
+            <td>Wendy's</td>
+            <td>25%</td>
+          </tr>
+          </tbody>
+          </table>
     </main>
+    <footer>
+        <span class="test-reset">Source</span><br />
+        <a href="https://github.com/elevatedMinds/Web-Programming"
+          >Github - Jessica Braithwaite</a>
+      </footer>
   </body>
 </html>
