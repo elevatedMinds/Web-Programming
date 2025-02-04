@@ -21,6 +21,7 @@
 - **World Wide Web** is an information retrieval service, development started in 1989 by Tim Berners-Lee and colleagues at CERN. They created HTTP (HyperText Transfer Protocol) that standardized communication between servers and clients - general release 1992.
   - HyperText: a hyperlink involving text. Hyperlinks have a tree link structure.
     - A hypertext document is written in HyperTect Markup Language (HTML) and assigned a Uniform Resource Locator (URL).
+      - Markup refers to elements used to annotate text, images and other content. 
   - Client-server format: servers - computer programs that store and transmit documents to other computers on the network when asked and clients - programs that request documents from a server as user asks them to.
   - Mosaic and Netscape: the most popular web browser of the late 90s.
 - **Browser** software allows users to view retrieved documents. A developers jobs is to ensure smooth interactions and render time is key, we must ensure that the main thread can complete all the work we throw at it and still be available to handle user interactions.
