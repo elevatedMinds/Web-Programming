@@ -1,0 +1,26 @@
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .retry-button {
+    padding: 15px 32px;
+    border-radius: 20%;
+    background-color: pink;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .choice-form {
+    display: inline;
+  }
+  
+  .choice-button {
+    padding: 15px 32px;
+    border-radius: 20%;
+    background-color: rgb(255, 191, 249);
+    border: none;
+    cursor: pointer;
+  }
+  

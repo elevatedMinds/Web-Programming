@@ -2,3 +2,15 @@
     /*top right bottom left*/
     padding: 10px 25px 10% 25px;
 }
+
+img{
+    border-radius: 15%;
+}
+
+img:hover {
+    filter: sepia(100%) brightness(80%);
+}
+
+p{
+    color: purple;
+}
