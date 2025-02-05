@@ -14,3 +14,7 @@ img:hover {
 p{
     color: purple;
 }
+
+p:hover {
+    color: grey;
+}

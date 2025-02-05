@@ -10,6 +10,11 @@
     background-color: pink;
     border: none;
     cursor: pointer;
+    font-family: cursive;
+  }
+
+  .retry-button:hover{
+    background-color: rgb(253, 174, 158);
   }
   
   .choice-form {
@@ -22,5 +27,9 @@
     background-color: rgb(255, 191, 249);
     border: none;
     cursor: pointer;
+    font-family: cursive;
   }
   
+  .choice-button:hover {
+    background-color: rgb(253, 174, 158);;
+  }

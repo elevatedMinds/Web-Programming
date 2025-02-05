@@ -58,15 +58,23 @@ a:visited {
 }
 
 .buttons{
+    display: flex;
     padding: 18px;
+    gap: 10px;
+    justify-content: center;
 }
+
 .login-button{
     padding: 15px 32px;
     border-radius: 15%;
     background-color: rgb(198, 197, 197);
     border: none;
     cursor: pointer;
-    
+    font-family: cursive;
+}
+
+.login-button:hover{
+    background-color: rgb(255, 192, 232);
 }
 
 .footer{
