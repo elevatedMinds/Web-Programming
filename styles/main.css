@@ -1,30 +1,79 @@
 /*icon on tab*/
 body {
-    background-color: rgb(255, 245, 228);
+    background-color: rgb(254, 239, 212);
     text-align: center;
     font-family: cursive;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-/*box padding for space between header and main*/
 header{
-    border: dashed;
+    background-color: pink;
+    display: flex;
+    flex: 0 80px;
 }
+
 header h1{
     padding-right: 20%;
     text-align: left;
     font-family: cursive;
 }
 
-/*right text box, center*/
 nav {
+    overflow: hidden;
     padding-left: 80%;
     position: absolute;
-    top: 0px;
+    top: 8px;
+    right: 16px;
     text-align: center;
     font-family: serif;
 }
 
-main {
-    border: dashed;
-    padding: 2em;
+.welcome {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a:hover {
+    color: purple;
+}
+
+a:visited {
+    color: rgb(88, 20, 20);
+    text-decoration-color: red;
+}
+
+.icon {
+    font-size: 25px;
+}
+
+.login-field{
+    padding: 8px;
+}
+
+.buttons{
+    padding: 18px;
+}
+.login-button{
+    padding: 15px 32px;
+    border-radius: 15%;
+    background-color: rgb(198, 197, 197);
+    border: none;
+    cursor: pointer;
+    
+}
+
+.footer{
+    background-color: pink;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
