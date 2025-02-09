@@ -32,7 +32,7 @@ HTML facilitates communication between web browsers and servers, making it a cru
   - run deployFiles.sh from the project directory that you want to deploy.<br/>
     ./deployFiles.sh -k ~/keys/production.pem -h yourdomain.click -s simon
 
-## CSS + JS (Web 2.0)
+## CSS
 
 CSS (Cascading Style Sheets) is used to style HTML and to create complex renderings (complex fonts, animated pages,etc).
 
@@ -53,8 +53,11 @@ CSS (Cascading Style Sheets) is used to style HTML and to create complex renderi
 - selecting nested elements -> h1 span or .highlights
   - To select only an <em> that is nested inside an <li> element, you can use a selector called the descendant combinator, which takes the form of a space between two other selectors.
   - we can style things based on their state- a:link {color: pink;} a:visited {color: green;}
-
 - **specificity overrides element selectors**
+
+## JS (Web 2.0)
+
+JavaScript is based on concepts in C, Java, Scheme. It is interpreted language, making it portable but also suspetible for errors (undefined variable). Browser compatibility is an issue when developing a web application, consult side like (MDN)[https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Browser_support_for_JavaScript_APIs] to see how well the feature is supported. 
 
 ## Git & GitHub
 

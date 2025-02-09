@@ -19,7 +19,7 @@ With all of the fast foods options today it can sometimes be difficult to pinpoi
 
 ### Design
 
-![Design image](startup_demo.png)
+![Design image](images/startup_demo.png)
 
 ### Key features
 
