@@ -48,16 +48,44 @@ CSS (Cascading Style Sheets) is used to style HTML and to create complex renderi
   - padding: the space around the content like <p>
   - border: the solid line just outside the padding
   - margin: the spave around the putside of the border
-- [CSS values and units](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Values_and_units)
+- [CSS values and units](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Values_and_units) </br>
 - CSS validation service (W3C): used to detect problems in css
 - selecting nested elements -> h1 span or .highlights
-  - To select only an <em> that is nested inside an <li> element, you can use a selector called the descendant combinator, which takes the form of a space between two other selectors.
+  - To select only an em that is nested inside an element, you can use a selector called the descendant combinator, which takes the form of a space between two other selectors.
   - we can style things based on their state- a:link {color: pink;} a:visited {color: green;}
 - **specificity overrides element selectors**
 
 ## JS (Web 2.0)
 
-JavaScript is based on concepts in C, Java, Scheme. It is interpreted language, making it portable but also suspetible for errors (undefined variable). Browser compatibility is an issue when developing a web application, consult side like (MDN)[https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Browser_support_for_JavaScript_APIs] to see how well the feature is supported. 
+JavaScript is based on concepts in C, Java, Scheme. It is interpreted language, making it portable but also suspetible for errors (undefined variable). Browser compatibility is an issue when developing a web application, consult side like (MDN)[https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Browser_support_for_JavaScript_APIs] to see how well the feature is supported. </br>
+You can execute a line of JavaScript with Node.js from your console with the -e parameter.</br>
+You can also run node in interpretive mode by executing it without any parameters and then typing your JavaScript code directly into the interpreter.</br>
+Pre-made JS packages can be used for comman tasks
+1. install package locally with Node Package Manager (NPM)
+  - NPM gives access to large collection of packages needed to set up project by creating a directory of JS files and running init
+2. add a require statement in code to reference it</br>
+```sh
+➜  mkdir npmtest
+➜  cd npmtest
+➜  npm init -y
+```
+When you create a project, a package.json file is created. This file has three main things:
+1. Project information like name and entry JavaScript file.
+2. Scripts you can run, such as test or start.
+3. Packages that your project depends on.
+
+- package-lock.json: Tracks the exact version of the packages installed.
+- node_modules: A folder where installed packages are stored. Don't check this into source control. Add it to your .gitignore file.
+
+You can insert JavaScript into HTML with one of three ways:
+1. Script block: Directly including it in the HTML within the content of a <script> element
+2. External code: Using the src attribute of the script element to reference an external JavaScript file.
+3. Inline event attribute: Putting JavaScript directly inline as part of an event attribute handler.
+
+Web frameworkds make it easier to build web-apps by providing tools for common tasks like organising code and supporting different devices. Some frameworks create new formats that combine things like HTML and JS into a single file like React JSX. Vue combines HTML, CSS, JS into a single file. Svelte is similar to Vue but requires a transpiler to generate browser ready code. Angular keeps JS, HTML, CSS in seperate files, organized by components.
+### React and JSX
+
+React uses a JavaScript version called JSX, which combines HTML and JavaScript in one file. JSX is converted into browser ready code using tools like Vite or Babel.
 
 ## Git & GitHub
 

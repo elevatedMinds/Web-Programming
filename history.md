@@ -37,3 +37,8 @@
     - the initiator receives the servers SYN-ACK and sends an ACK, server receivs it and the TCP socket connection is established.
   - TLS (Transport Layer Security) is another handshake required to secure connection established over HTTPS. It determines which cipher will be used to encrypt the communication, verifies the server and establishes that a secure connection is in place before transferring data. worth the latency expense as the data transmitted between browser and web server cannot be decrypted by a third party.
   - Now, browser sends an initial HTTP GET request on behalf of the user (for websites this is an HTML file). server receives it and replies with relevant HTML content.
+
+- **CS**
+
+
+
