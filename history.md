@@ -38,7 +38,19 @@
   - TLS (Transport Layer Security) is another handshake required to secure connection established over HTTPS. It determines which cipher will be used to encrypt the communication, verifies the server and establishes that a secure connection is in place before transferring data. worth the latency expense as the data transmitted between browser and web server cannot be decrypted by a third party.
   - Now, browser sends an initial HTTP GET request on behalf of the user (for websites this is an HTML file). server receives it and replies with relevant HTML content.
 
-- **CS**
+- **JS**
 
+JS is one the implementations of a standard specification called ECMAscript and there are many specification standards, new standards are often equiped with new features. Sometimes new standards are not implemented on certain browsers and in these cases it is useful to have a transpiler.
+  - Typescript is a free open source language developed and maintained by Microsoft, it is a typed superset of JS that compiles to superset of JS. 
+    - to install TS globally: npm install -g typescript
+    - then create a tsconfig.json using tsc npm init -y. tsconfig.json file specifies the root files and the compiler options required to compile the project.
+    - uncomment "sourceMap": true so that we have a mapping ts to js file to help with debugging.  
+    - edit "outDir": "./" in tsconfig and build (Crtl, Shift B) this is where all the js files will be located
+    - add script tag with element src pointing to js file
 
+[scope](https://www.bing.com/ck/a?!&&p=fad073e775c153c8374c650a4d87bbedd99e24c79d2f89759019ce2e38c725e0JmltdHM9MTczOTQwNDgwMA&ptn=3&ver=2&hsh=4&fclid=0d5c47c3-0a99-637d-1c53-532e0b1d62e0&psq=js+functional+scope&u=a1aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvZW4tVVMvZG9jcy9HbG9zc2FyeS9TY29wZQ&ntb=1)
+Hoisting is a JS mechanism where variables and function declarations are moved to the top of their scope before code execution, meaning you can use variables and functions before they are declared in the code. <br/>
+The let keyword has block scope{}, must be declared before use and cannot be redeclared. 
+The const keyword is like the let keyword but it must have an assigned value when declared. 
 
+Vite is a build tool used to set up development environments for frameworks like Vue and React. Provides fast development with minimal configuration and overhead

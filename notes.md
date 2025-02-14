@@ -83,8 +83,10 @@ You can insert JavaScript into HTML with one of three ways:
 3. Inline event attribute: Putting JavaScript directly inline as part of an event attribute handler.
 
 Web frameworkds make it easier to build web-apps by providing tools for common tasks like organising code and supporting different devices. Some frameworks create new formats that combine things like HTML and JS into a single file like React JSX. Vue combines HTML, CSS, JS into a single file. Svelte is similar to Vue but requires a transpiler to generate browser ready code. Angular keeps JS, HTML, CSS in seperate files, organized by components.
+
 ### React and JSX
 
+React is an open source library for building UI's, not a framework, focus on UI, Rich ecosystem. It was created and is maintained by Facebook with a huge community and an in demand skillset. Component based architecture, which allows us to reuse code and seamlessly integrate reacte into any application.
 React uses a JavaScript version called JSX, which combines HTML and JavaScript in one file. JSX is converted into browser ready code using tools like Vite or Babel.
 
 ## Git & GitHub
