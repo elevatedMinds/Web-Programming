@@ -89,6 +89,24 @@ Web frameworkds make it easier to build web-apps by providing tools for common t
 React is an open source library for building UI's, not a framework, focus on UI, Rich ecosystem. It was created and is maintained by Facebook with a huge community and an in demand skillset. Component based architecture, which allows us to reuse code and seamlessly integrate reacte into any application.
 React uses a JavaScript version called JSX, which combines HTML and JavaScript in one file. JSX is converted into browser ready code using tools like Vite or Babel.
 
+As part of the move to React, we convert Simon from a multi-page application (MPA) to a single-page application (SPA). The browser only loads a single HTML file (index.html), and then we use JavaScript to interactively change the rendered content and components.
+1. Phase 1: The first phase will covert the Simon HTML/CSS code into a modern web application using Vite and React. This will introduce routing, modularize the code, and remove redundancy.
+2. Phase 2: The second phase will introduce the JavaScript necessary to make Simon interactive and functionally complete.
+
+The process of converting code from one way of doing things to different way is called porting.
+
+```
+npm init -y
+npm install vite@latest -D
+```
+
+ React Bootstrap that wraps the Bootstrap CSS framework in React components. This allows you to treat the Bootstrap widgets, such as Button and Modal, as a React component instead of just imported CSS and JavaScript.
+ ```
+ npm install bootstrap react-bootstrap
+ ```
+
+in the components where you want to refer to the Bootstrap styles, you can import the Bootstrap style sheet from the imported NPM package just like you would other CSS files
+
 ## Git & GitHub
 
 GitHub - host instructions, notes and backup code.

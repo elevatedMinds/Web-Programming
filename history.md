@@ -40,6 +40,8 @@
 
 - **JS**
 
+JS orginally designed only to run in browsers, executed by their JS engines. Node takes the open sourced v8 JS engine and embeds it inside a C++ which allows us to run JS outside of browser.  
+
 JS is one the implementations of a standard specification called ECMAscript and there are many specification standards, new standards are often equiped with new features. Sometimes new standards are not implemented on certain browsers and in these cases it is useful to have a transpiler.
   - Typescript is a free open source language developed and maintained by Microsoft, it is a typed superset of JS that compiles to superset of JS. 
     - to install TS globally: npm install -g typescript
