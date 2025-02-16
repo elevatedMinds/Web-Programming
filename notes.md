@@ -135,6 +135,11 @@ npm install bootstrap react-bootstrap
 
 in the components where you want to refer to the Bootstrap styles, you can import the Bootstrap style sheet from the imported NPM package just like you would other CSS files.
 
+```
+npm install react-router-dom
+npm ls react-router-dom     
+```
+
 ## Git & GitHub
 
 GitHub - host instructions, notes and backup code.
