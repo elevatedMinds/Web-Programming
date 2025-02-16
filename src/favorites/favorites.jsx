@@ -1,10 +1,34 @@
 import React from 'react';
 import './favorites.css';
+import { NavLink, useLocation } from 'react-router-dom';
+
+export function Header(){
+    const location = useLocation();
+    const isElementActive = location.pathname === '/favorites';
+
+    return (
+        <header>
+            <nav className='navigation-menu'>
+            <menu>
+                <NavLink to='/'
+                className={`navlink ${location.pathname === '/' ? 'active' : ''}`}>
+                    Home
+                </NavLink> <br/>
+                <NavLink to='/play'
+                className={`navlink ${location.pathname === '/play' ? 'active' : ''}`}>
+                    Generator
+                </NavLink>
+            </menu>
+            </nav>
+      </header>
+    )
+}
 
 export function Favorites(){
     return (
-        <main>
-            <h1>Favorites</h1>
+        <div>
+            <Header />
+            <h1 className="activity">Favorites</h1>
                 <div className="generatorWheel">
                     <svg viewBox="0 0 20 25" height="300" width="300">
                     <circle r="10" cx="10" cy="10" fill="grey"/>
@@ -32,6 +56,12 @@ export function Favorites(){
                 </tr>
                 </tbody>
                 </table>
-        </main>
+                <footer class="footer">
+                    <p>Logged in as: [username]</p>
+                    <span class="test-reset">Source</span><br />
+                    <a href="https://github.com/elevatedMinds/Web-Programming"
+                    >Github - Jessica Braithwaite</a>
+                </footer>
+        </div>
     )
 }

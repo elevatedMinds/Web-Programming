@@ -1,8 +1,29 @@
 import React from 'react';
 import './about.css';
+import { NavLink, useLocation } from 'react-router-dom';
+
+export function Header(){
+    const location = useLocation();
+    const isElementActive = location.pathname === '/about';
+
+    return (
+        <header>
+            <nav className='navigation-menu'>
+            <menu>
+                <NavLink to='/'
+                className={`navlink ${location.pathname === '/' ? 'active' : ''}`}>
+                    Home
+                </NavLink>
+            </menu>
+            </nav>
+      </header>
+    )
+}
 
 export function About(){
     return (
+        <div>
+        <Header/>
         <main className="description">
             <h1>About</h1>
             <img src="beach.png" alt="clouds" width="200" height="250" />
@@ -26,5 +47,6 @@ export function About(){
                 Have fun and enjoy!
             </p>
     </main>
+    </div>    
     )
 }

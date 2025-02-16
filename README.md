@@ -19,7 +19,7 @@ With all of the fast foods options today it can sometimes be difficult to pinpoi
 
 ### Design
 
-![Design image](images/startup_demo.png)
+![Design image](public/startup_demo.png)
 
 ### Key features
 
@@ -76,9 +76,9 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **Bundled using Vite** - I did not complete this part of the deliverable.
-- [ ] **Components** - I did not complete this part of the deliverable.
-- [ ] **Router** - Routing between login and voting components.
+- [ x ] **Bundled using Vite** - Vite used to bundle JSX.
+- [ x ] **Components** - JSX and css bundled into components based on page.
+- [ x ] **Router** - Routing between login and generator/play page.
 
 ## 🚀 React part 2: Reactivity
 

@@ -11,18 +11,8 @@ function App(){
     return (
         <BrowserRouter>
             <div className="body">
-                <header>
+                <header class="header-bar">
                     <h1>Choosi</h1>
-                    <nav>
-                        <menu>
-                        <NavLink className="menu" to="about">
-                            About
-                        </NavLink><br/>
-                        <NavLink className="menu" to="favorites">
-                            Favorites
-                        </NavLink>
-                        </menu>
-                    </nav>
                 </header>
                 
                 <Routes>
