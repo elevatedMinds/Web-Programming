@@ -65,8 +65,6 @@ Pre-made JS packages can be used for comman tasks
   - NPM gives access to large collection of packages needed to set up project by creating a directory of JS files and running init
 2. add a require statement in code to reference it</br>
 ```sh
-➜  mkdir npmtest
-➜  cd npmtest
 ➜  npm init -y
 ```
 When you create a project, a package.json file is created. This file has three main things:
@@ -78,7 +76,7 @@ When you create a project, a package.json file is created. This file has three m
 - node_modules: A folder where installed packages are stored. Don't check this into source control. Add it to your .gitignore file.
 
 You can insert JavaScript into HTML with one of three ways:
-1. Script block: Directly including it in the HTML within the content of a <script> element
+1. Script block: Directly including it in the HTML within the content of a script element
 2. External code: Using the src attribute of the script element to reference an external JavaScript file.
 3. Inline event attribute: Putting JavaScript directly inline as part of an event attribute handler.
 
@@ -93,19 +91,57 @@ As part of the move to React, we convert Simon from a multi-page application (MP
 1. Phase 1: The first phase will covert the Simon HTML/CSS code into a modern web application using Vite and React. This will introduce routing, modularize the code, and remove redundancy.
 2. Phase 2: The second phase will introduce the JavaScript necessary to make Simon interactive and functionally complete.
 
+#### Phase 1
+- install NPM package
+- npm install vite@latest -D
+  edit .json file
+  ```
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  }
+  ```
+
 The process of converting code from one way of doing things to different way is called porting.
+
+Start by changing the project structure.
+1. Create a public directory that is going to hold all the application image and sound assets
+2.  Create a src directory where we will put all of the React code. Under the src directory we create a folder for each of the view components that represent the major functionality of the Simon application.
+3. When Browser gets response from server and starts rendering, it goes to the root file which in most cases is public/index.html, and (render)[https://stackoverflow.com/questions/65531046/what-is-the-purpose-of-using-demo-or-root] the same file most first.
+
+Inside this html a <div> element is written whose id is "root"
+
+<div id="root"> <div>
+
+Then control goes to another file that is index.js.
+
+Inside this .js file, a component is used in most React apps this component is called <App/>. 
+
+This <App/> component is the most first component that is rendered on the screen. Every Component is defined inside this component or it's children.
+  - any function in JS that returns some kind of JSX code
+3. npm create vite@latest react-lib -- --template react-ts
+  - This will create a folder inside your current directory called "react-lib"
+  - files and directories in the project 
+    - App.tsx : This is the main component of your React application. It contains the structure and logic for your app’s user interface. You can define the layout, components, and functionality within this file. During the development, Vite will compile this src/main.ts file into a JavaScript bundle and inject it into the index.html file.
+      - Vite is a lightweight web server that allows us to run our React applications
+    - index.tsx : This file is the entry point of your React application. It is responsible for rendering the root component (App.js) and attaching it to the HTML document. It sets up the React DOM and provides the initial rendering of your app.
+    - App.css : This file contains the CSS styles specific to the App.js component. It allows you to style the elements and apply visual formatting to your app.
+    - index.css : This file contains global CSS styles that apply to the entire application. It allows you to define styles that should be applied globally, affecting all components within the app.
+    - package.json file is used to manage dependencies, scripts, and configurations.
 
 ```
 npm init -y
 npm install vite@latest -D
 ```
 
- React Bootstrap that wraps the Bootstrap CSS framework in React components. This allows you to treat the Bootstrap widgets, such as Button and Modal, as a React component instead of just imported CSS and JavaScript.
- ```
- npm install bootstrap react-bootstrap
- ```
+React Bootstrap that wraps the Bootstrap CSS framework in React components. This allows you to treat the Bootstrap widgets, such as Button and Modal, as a React component instead of just imported CSS and JavaScript.
+```
+npm install bootstrap react-bootstrap
+```
 
-in the components where you want to refer to the Bootstrap styles, you can import the Bootstrap style sheet from the imported NPM package just like you would other CSS files
+in the components where you want to refer to the Bootstrap styles, you can import the Bootstrap style sheet from the imported NPM package just like you would other CSS files.
+- JSX file containing a React component element named Demo would cause React to load the Demo component, get the JSX returned from the component, and insert the result into the place of the Demo element.
 
 ## Git & GitHub
 

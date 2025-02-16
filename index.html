@@ -1,48 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Choosi</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <script src="index.js"></script>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+
+    <title>Startup</title>
   </head>
   <body>
-    <header>
-      <h1>Choosi</h1>
-      <nav>
-        <menu>
-          <a class="menu" href="about.html">About</a> <br />
-          <a clss="menu" href="favorites.html">Favorites</a>
-        </menu>
-      </nav>
-    </header>
-    <main class="welcome">
-      <h1>Welcome!</h1>
-      <form method="get" action="play.html">
-        <div class="login-field">
-          <span class="icon">&#128100;</span>
-          <input type="text" placeholder="Enter Username" />
-        </div>
-        <div class="login-field">
-          <span class="icon">&#128188;</span>
-          <input type="password" placeholder="Enter Password" />
-        </div>
-
-        <div class="buttons">
-          <button class="login-button" type="submit">Login</button>
-          <button class="login-button" type="submit">Register</button>
-        </div>
-      </form>
-    </main>
-    <br />
-
-    <footer class="footer">
-      <span class="test-reset">Source</span><br />
-      <a href="https://github.com/elevatedMinds/Web-Programming"
-        >Github - Jessica Braithwaite</a
-      >
-    </footer>
+    <div id="root"></div>
+    <script type="module" src="/index.jsx"></script>
   </body>
 </html>

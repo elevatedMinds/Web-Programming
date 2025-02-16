@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choosi</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/favorites.css"/>
+  </head>
+  <body>
+    <header>
+      <h1>Choosi</h1>
+      <nav>
+        <menu>
+          <a href="index.html">Home</a><br/>
+          <a href="play.html">Generator</a>
+        </menu>
+      </nav>
+    </header>
+    <main>
+      <h1>Favorites</h1>
+        <!--SVG image for pie chart-->
+        <div class="generatorWheel">
+            <svg viewBox="0 0 20 25" height="300" width="300">
+              <circle r="10" cx="10" cy="10" fill="grey"/>
+              <circle r="5" cx="10" cy="10" fill="grey"
+              stroke="#f051f0"
+              stroke-width="10"
+              stroke-dasharray="calc(35 * 31.42 / 100) 31.42" />
+            </svg>
+          </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Fast Food Places</th>
+            <th>Percentage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>McDonald's</td>
+            <td>75%</td>
+          </tr>
+          <tr>
+            <td>Wendy's</td>
+            <td>25%</td>
+          </tr>
+          </tbody>
+          </table>
+    </main>
+    <footer class="footer">
+        <p>Logged in as: [username]</p>
+        <span class="test-reset">Source</span><br />
+        <a href="https://github.com/elevatedMinds/Web-Programming"
+          >Github - Jessica Braithwaite</a>
+      </footer>
+  </body>
+</html>
