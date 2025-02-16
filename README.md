@@ -76,9 +76,9 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ x ] **Bundled using Vite** - Vite used to bundle JSX.
-- [ x ] **Components** - JSX and css bundled into components based on page.
-- [ x ] **Router** - Routing between login and generator/play page.
+- [x] **Bundled using Vite** - Vite used to bundle JSX.
+- [x] **Components** - JSX and css bundled into components based on page.
+- [x] **Router** - Routing between login and generator/play page.
 
 ## 🚀 React part 2: Reactivity
 
