@@ -8,8 +8,12 @@ function App(){
                     <h1>Choosi</h1>
                     <nav>
                         <menu>
-                        <a className="menu" href="about.html">About</a> <br />
-                        <a className="menu" href="favorites.html">Favorites</a>
+                        <NavLink className="menu" to="about">
+                            About
+                        </NavLink>
+                        <NavLink className="menu" to="favorites">
+                            Favorites
+                        </NavLink>
                         </menu>
                     </nav>
                     </header>
