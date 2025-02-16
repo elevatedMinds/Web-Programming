@@ -120,20 +120,13 @@ Inside this .js file, a component is used in most React apps this component is c
 
 This <App/> component is the most first component that is rendered on the screen. Every Component is defined inside this component or it's children.
   - any function in JS that returns some kind of JSX code
-3. npm create vite@latest react-lib -- --template react-ts
-  - This will create a folder inside your current directory called "react-lib"
-  - files and directories in the project 
-    - App.tsx : This is the main component of your React application. It contains the structure and logic for your app’s user interface. You can define the layout, components, and functionality within this file. During the development, Vite will compile this src/main.ts file into a JavaScript bundle and inject it into the index.html file.
-      - Vite is a lightweight web server that allows us to run our React applications
-    - index.tsx : This file is the entry point of your React application. It is responsible for rendering the root component (App.js) and attaching it to the HTML document. It sets up the React DOM and provides the initial rendering of your app.
-    - App.css : This file contains the CSS styles specific to the App.js component. It allows you to style the elements and apply visual formatting to your app.
-    - index.css : This file contains global CSS styles that apply to the entire application. It allows you to define styles that should be applied globally, affecting all components within the app.
-    - package.json file is used to manage dependencies, scripts, and configurations.
-
-```
-npm init -y
-npm install vite@latest -D
-```
+3. npm create vite@latest -D
+  - Vite is a lightweight web server that allows us to run our React applications
+4. files and directories in the project 
+  - App.jsx : This is the main component of your React application. It contains the structure and logic for your app’s user interface. You can define the layout, components, and functionality within this file. During the development, Vite will compile index.jsx file into a JavaScript bundle and inject it into the index.html file.
+  - index.jsx : This file is the entry point of your React application. It is responsible for rendering the root component (App.jsx) and attaching it to the HTML document. It sets up the React DOM and provides the initial rendering of your app.
+  - src/App.css : This file contains the CSS styles specific to the App.jsx component. It allows you to style the elements and apply visual formatting to your app.
+  - src/App.css : This file contains global CSS styles that apply to the entire application. It allows you to define styles that should be applied globally, affecting all components within the app.
 
 React Bootstrap that wraps the Bootstrap CSS framework in React components. This allows you to treat the Bootstrap widgets, such as Button and Modal, as a React component instead of just imported CSS and JavaScript.
 ```
@@ -141,7 +134,6 @@ npm install bootstrap react-bootstrap
 ```
 
 in the components where you want to refer to the Bootstrap styles, you can import the Bootstrap style sheet from the imported NPM package just like you would other CSS files.
-- JSX file containing a React component element named Demo would cause React to load the Demo component, get the JSX returned from the component, and insert the result into the place of the Demo element.
 
 ## Git & GitHub
 
