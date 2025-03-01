@@ -44,6 +44,7 @@ CSS (Cascading Style Sheets) is used to style HTML and to create complex renderi
 - using style tag within the head element
 - using link tag in the head element: <br/>
 <link rel="stylesheet" href="styles.css" />
+
 - CSS defines everything as boxes. Within an element's box there are several internal boxes. The innermost box holds the element's content.
   - padding: the space around the content like <p>
   - border: the solid line just outside the padding
@@ -57,7 +58,7 @@ CSS (Cascading Style Sheets) is used to style HTML and to create complex renderi
 
 ## JS (Web 2.0)
 
-JavaScript is based on concepts in C, Java, Scheme. It is interpreted language, making it portable but also suspetible for errors (undefined variable). Browser compatibility is an issue when developing a web application, consult side like (MDN)[https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Browser_support_for_JavaScript_APIs] to see how well the feature is supported. </br>
+JavaScript is based on concepts in C, Java, Scheme. It is interpreted language, making it portable but also suspetible for errors (undefined variable). Browser compatibility is an issue when developing a web application, consult side like [MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Browser_support_for_JavaScript_APIs]) to see how well the feature is supported. </br>
 You can execute a line of JavaScript with Node.js from your console with the -e parameter.</br>
 You can also run node in interpretive mode by executing it without any parameters and then typing your JavaScript code directly into the interpreter.</br>
 Pre-made JS packages can be used for comman tasks
@@ -108,11 +109,9 @@ The process of converting code from one way of doing things to different way is 
 Start by changing the project structure.
 1. Create a public directory that is going to hold all the application image and sound assets
 2.  Create a src directory where we will put all of the React code. Under the src directory we create a folder for each of the view components that represent the major functionality of the Simon application.
-3. When Browser gets response from server and starts rendering, it goes to the root file which in most cases is public/index.html, and (render)[https://stackoverflow.com/questions/65531046/what-is-the-purpose-of-using-demo-or-root] the same file most first.
+3. When Browser gets response from server and starts rendering, it goes to the root file which in most cases is public/index.html, and [render](https://stackoverflow.com/questions/65531046/what-is-the-purpose-of-using-demo-or-root) the same file most first.
 
-Inside this html a <div> element is written whose id is "root"
-
-<div id="root"> <div>
+Inside this html a < div> element is written whose id is "root"
 
 Then control goes to another file that is index.js.
 
@@ -139,6 +138,27 @@ in the components where you want to refer to the Bootstrap styles, you can impor
 npm install react-router-dom
 npm ls react-router-dom     
 ```
+[uselocation router](https://how.dev/answers/how-to-use-the-uselocation-hook-in-react) </br>
+[uselocation reference](https://www.dhiwise.com/post/guide-to-implementing-the-uselocation-hook-in-your-react-app)</br>
+[navlink router](https://medium.com/@alexanie_/navlink-component-in-react-router-b83f4a11794f)</br>
+[navlink reference](https://api.reactrouter.com/v7/functions/react_router.NavLink.html)
+
+(typescript)[https://victorlillo.dev/blog/react-typescript-vite-component-library]
+  - (tutorial)[https://blog.logrocket.com/how-to-use-typescript-react-tutorial-examples/]
+
+## Asynchronous JS
+
+The drawback with a synchronous program can be seen when waiting for a response from an with API, 
+as program will be stuck waiting for a response (be unresponsive). 
+Asynchronous programming allows for us to run a second set of unstructions while focusing on it primary process.
+  - improves app, performance, better user-x, reduce efficency.
+
+Callback is a function that is passed in as an argument to another function that then executes it based on the result.
+  - having a bunch of nested callback is called callback hell, which can be hard to read and unmanageble if not carefully + clearly executed.
+
+Promises can be used to manage callback, it is an object that holds the future value of an async operation.
+Pending (async operation), fulfilled (successful execution), rejected (error).
+![alt text](image.png)
 
 ## Git & GitHub
 
