@@ -4,8 +4,6 @@ import { NavLink, useLocation } from 'react-router-dom';
 
 export function Header(){
     const location = useLocation();
-    const isElementActive = location.pathname === '/favorites';
-
     return (
         <header>
             <nav className='navigation-menu'>

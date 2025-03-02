@@ -172,6 +172,7 @@ async keyword declares that a function returns a promise. The await keyword wrap
 By combining async, to define functions that return promises, with await, to wait on the promise, you can create code that is asynchronous, but still maintains the flow of the code without explicitly using callbacks.
 
 ### Simon
+
 play page
   - parent component (play.jsx) children...
     - websocket messages (players.jsx) to display message from other players
@@ -181,6 +182,22 @@ play page
   - supporting JS files
     - delay.js to give delay between button pushes
     - gamesNotifier.js to handle websocket messages - mock
+
+### StartUp
+
+about page - for description and image
+  - about.jsx - header component for navigating through pages
+
+login page - for login
+  - cannot login or register until both inputs have been filled
+  - place holder needed for getting location to render generator options
+
+play page - for displaying generator n user choices
+  - create generator to render stats for fav. page
+
+favorites page - for displaying stats based on user choice
+  
+
 
 ## Git & GitHub
 
