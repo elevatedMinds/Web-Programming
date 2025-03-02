@@ -1,24 +1,32 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { MockData } from './mock.js';
 import './wheel.css'
 
-const circleGenerator = () => {
-    const circleContainerRef = useRef(null);
+function WheelContainer ({rotation}) {
+    const WheelContainerRef = useRef(null);
+    const [rotate, setRotation] = useState(rotation);
+    const [randomObject, setRandom] = useState(MockData[0]);
 
     useEffect(() => {
-        generateCircle(); }, []);
+        console.log('rotation: '); }, [rotate]);
 
-    const generateCircle = () => {
-        const circleContainer = circleContainerRef.current;
-        if (circleContainer){
-            const circle = document.createElement('div');
-            circle.classList.add('circle');
-            circleContainer.appendChild(circle);
-        }
+    const spinner = () => {
+        const newRotation = rotation + Math.ceil(Math.random() * 100);
+        const index = Math.floor(Math.random() * MockData.length);
+        setRotation(newRotation);
+        setRandom(MockData[index]);
     };
 
     return (
-        <div id="circle-container" ref={circleContainerRef}/>
+        <div id="wheel-container" ref={WheelContainerRef}>
+            <div className='display'>
+                {randomObject}
+            </div>
+            <button onClick={spinner}>
+                Spin
+            </button>
+        </div>
     );
 };
 
-export default circleGenerator;
+export default WheelContainer;

@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './play.css';
 import { NavLink, useLocation } from 'react-router-dom';
-import CircleGenerator from './wheel.jsx';
+import WheelContainer from './wheel.jsx';
 
 export function Header(){
     const location = useLocation();
@@ -23,14 +23,14 @@ export function Header(){
     )
 }
 
-export function Play(){
+export function Play(props){
     return (
         <div>
             <Header/>
         <main>
             <h1 className="activity">Generator</h1>
-    
-            <CircleGenerator/>
+
+            <WheelContainer rotation={0}/>
 
             <div class="actions">
             <button class="retry-button" type="button">Let's try again!</button>
