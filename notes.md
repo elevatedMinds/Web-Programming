@@ -194,6 +194,9 @@ login page - for login
 
 play page - for displaying generator n user choices
   - create generator to render stats for fav. page
+    - uses useRef for DOM manipulation
+    - useEffect to call generateCircle which uses ref to access div and add circle, css used to format circle
+      - circle is used to reset generator which will be built later --callback
 
 favorites page - for displaying stats based on user choice
   
