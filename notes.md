@@ -159,6 +159,28 @@ Callback is a function that is passed in as an argument to another function that
 Promises can be used to manage callback, it is an object that holds the future value of an async operation.
 Pending (async operation), fulfilled (successful execution), rejected (error).
 ![alt text](image.png)
+similar to exception handling. then, catch, and finally. 
+  - then function is called if the promise is fulfilled
+  - catch is called if the promise is rejected
+  - finally is always called after all the processing is completed
+
+Await will return a promises that will resolve to the value that was previously returned by the function, provides concise representation.
+await keyword wraps the execution of a promise and removed the need to chain functions. 
+await expression will block until the promise state moves to fulfilled, or throws an exception if the state moves to rejected.
+
+async keyword declares that a function returns a promise. The await keyword wraps a call to the async function, blocks execution until the promise has resolved, and then returns the result of the promise.
+By combining async, to define functions that return promises, with await, to wait on the promise, you can create code that is asynchronous, but still maintains the flow of the code without explicitly using callbacks.
+
+### Simon
+play page
+  - parent component (play.jsx) children...
+    - websocket messages (players.jsx) to display message from other players
+    - game (simonGame.jsx) includes button components 
+      - simonButton
+
+  - supporting JS files
+    - delay.js to give delay between button pushes
+    - gamesNotifier.js to handle websocket messages - mock
 
 ## Git & GitHub
 
