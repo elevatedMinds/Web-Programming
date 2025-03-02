@@ -1,11 +1,10 @@
 import React from 'react';
 import './play.css';
 import { NavLink, useLocation } from 'react-router-dom';
+import CircleGenerator from './wheel.jsx';
 
 export function Header(){
     const location = useLocation();
-    const isElementActive = location.pathname === '/play';
-
     return (
         <header>
             <nav className='navigation-menu'>
@@ -30,7 +29,8 @@ export function Play(){
             <Header/>
         <main>
             <h1 className="activity">Generator</h1>
-            <img src="wheel.png" alt="clouds" width="450" height="300" /><br />
+    
+            <CircleGenerator/>
 
             <div class="actions">
             <button class="retry-button" type="button">Let's try again!</button>
