@@ -11,7 +11,7 @@ function App(){
     return (
         <BrowserRouter>
             <div className="body">
-                <header class="header-bar">
+                <header className="header-bar">
                     <h1>Choosi</h1>
                 </header>
                 
@@ -23,8 +23,8 @@ function App(){
                 <Route path='*' element={<NotFound />} />
                 </Routes>
 
-                <footer class="footer">
-                    <span class="test-reset">Source</span><br />
+                <footer className="footer">
+                    <span className="test-reset">Source</span><br />
                     <a href="https://github.com/elevatedMinds/Web-Programming"
                         >Github - Jessica Braithwaite</a>
                 </footer>

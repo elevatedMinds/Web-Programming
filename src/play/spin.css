@@ -1,0 +1,130 @@
+:root {
+    --wheel-font: arial;
+    --wheel-color: rgb(121, 6, 141);
+    --wheel-size: 250px;
+    --neutral-color: rgb(253, 243, 225);
+    --wheel-border-size: 6px;
+    --wheel-slice-spacing: 20px;
+    --PI: 3.14159265358979;
+    --nb-item: 1;
+    --item-nb: 0; /*current item*/
+    --selected-item: 0;
+    --nb-turn: 5;
+    --spinning-duration: 2s;
+    --degrees-to-change: 0;
+}
+
+/*center wheel*/
+.wrapper {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0px 20px 0px;
+}
+
+.wheel-container {
+    display: block;
+    position: relative;
+    box-sizing: content-box; /*for size defining*/
+    width: calc(var(--wheel-size) + 2 * var(--wheel-border-size));
+    height: calc(var(--wheel-size) + 2 * var(--wheel-border-size));
+    padding: 5px;
+    background-color: var(--neutral-color);
+    border: solid var(--wheel-color) 3px;
+    border-radius: 50%;
+}
+
+/*pointer formatting*/
+.wheel-container::before,
+.wheel-container::after {
+    content: ''; /*pseudo selector: inserting generated content*/
+    display: block;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 50%; /*vertically centering*/
+    z-index: 2; /*stacking order*/
+    transform: translateY(-50%);
+    border: solid transparent 20px;
+    border-left-width: 0;
+}
+
+.wheel-container::before{
+    right: 0px;
+    border-right-color: var(--wheel-color);
+}
+.wheel-container::after{
+    right: -5px;
+    border-right-color: var(--neutral-color);
+}
+
+/*spinning graphics*/
+.wheel {
+    display: block;
+    position: relative;
+    box-sizing: content-box;
+    margin: auto;
+    width: var(--wheel-size);
+    height: var(--wheel-size);
+    border-radius: 50%;
+    background-color: var(--wheel-color);
+    border: solid var(--wheel-color) var(--wheel-border-size);
+    transform: rotate(0deg);
+    transition: transform var(--spinning-duration) cubic-bezier(0.25, 0.1, 0.25, 1);
+    overflow: hidden; 
+}
+
+.wheel.spinning, 
+.wheel.stopped {
+    transform: rotate(calc(var(--nb-turn) * 360deg + (-360deg * var(--selected-item) / var(--nb-item))));
+}
+
+/*mid-point*/
+.wheel::after{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    position: absolute;
+    background-color: var(--neutral-color);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+/*each slice*/
+.wheel-item {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform-origin: center left;
+    transform: translateY(-50%) rotate(calc(var(--item-nb) * (360deg / var(--nb-item))));
+    text-align: right;
+    padding: 0 25px 0 50px;
+    color: var(--neutral-color);
+    font-family: var(--wheel-font);
+}
+
+.wheel-item:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 0px;
+    opacity: 0.25;
+    
+    --slice-max-width: calc(var(--PI) * var(--wheel-size) + var(--wheel-size) / 2);
+    --slice-width: calc((var(--slice-max-width) / var(--nb-item)) - var(--wheel-slice-spacing));
+    border: solid transparent calc(var(--slice-width)/2);
+    border-left: solid transparent 0;
+    border-right: solid var(--neutral-color) calc(var(--wheel-size)/2);
+}

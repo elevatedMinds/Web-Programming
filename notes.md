@@ -196,8 +196,15 @@ login page - for login
 play page - for displaying generator n user choices
   - create generator to render stats for fav. page
     - uses useRef for DOM manipulation
-    - uses ref to access div and add circle, css used to format circle
     - mock.js used to mock for API
+    - play.jsx 
+      - useState hook to manage items (from API and item selected by wheel) and spinning
+      - useEffect hook to fetch mockData and update data from it
+    - wheel.jsx 
+      - useState to store index of selected item
+      - useRef to wheel DOM element (css manipulation)
+      - useEffect one: if spinning state true and valid num of items, second: if wheel is not spinning make sure the wheel stops at selected item (element ref is pointing to allowing)
+    - spin.css [wheel spin example](https://github.com/davidlynch2000/WheelOfQA/blob/e526fc409d2c6e96eda6cacdb494f785180ae777/src/wheel.css)
 
 favorites page - for displaying stats based on user choice
   
